@@ -5,6 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "build": "babel --presets react,env,stage-0 src --out-dir lib",
+    "start": "start-storybook -p 9001 -c .storybook",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "files": [
@@ -29,6 +30,7 @@
   },
   "homepage": "https://github.com/d1slike/react-forms#readme",
   "devDependencies": {
+    "@storybook/react": "^3.4.8",
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.5",
     "babel-preset-env": "^1.7.0",
@@ -42,6 +44,8 @@
   },
   "dependencies": {
     "flat": "^4.0.0",
-    "invariant": "^2.2.4"
+    "invariant": "^2.2.4",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
   }
 }
