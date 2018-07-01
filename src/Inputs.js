@@ -24,7 +24,15 @@ export const FormField = observer(
 
 export const FormSelect = observer(
     ({
-        bind, error, label, required, type = 'text', wrapperProps = {}, extra, options = [], ...rest
+        bind,
+        error,
+        label,
+        required,
+        type = 'text',
+        wrapperProps = {},
+        extra,
+        options = [],
+        ...rest
     }) => (
         <Form.Item
             label={label}
